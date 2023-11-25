@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1>Switch Statement</h1>
+                <p> 
+                    <pre>
+                        // if input = 1, 'y', 'yes' Output = continue... 
+                        // if input = 0, 'n', 'no' Output = End...
+                    </pre>
+                </p>
+                <h3>With if else</h3>
+                <p>=== will help to compare string or number</p>
+                <p>
+                    <pre>
+                    // if input = 1, 'y', 'yes' Output = continue...
+                    // if input = 0, 'n', 'no' Output = End...
+
+                    let input = 1;
+                    
+                    if(input === 1){
+                        document.write("Continue...")
+                    }else if(input === 'y'){
+                        document.write("Continue...")
+                    }else if(input === 'yes'){
+                        document.write("continue...")
+                    }else if(input === 0){
+                        document.write("End...")
+                    }else if(input === 'n'){
+                        document.write("End...")
+                    }else{
+                        document.write("Wrong Output...")
+                    }
+                    // Output continue...
+                    </pre>
+                </p>
+
+                <h3>Short if else</h3>
+              
+                <p>
+                    <pre>
+                  
+                    let input = 1;
+                    
+                    if(input === 1 || input === 'y' || input === 'yes' ){
+                        document.write("Continue...")
+                    }else if(input === 0 || input === 'n' || input === 'no'){
+                        document.write("End...")
+                    }else{
+                        document.write("Wrong Output...")
+                    }
+                    // Output continue...
+                    </pre>
+                </p>
+
+
+                <h3>Switch Statement</h3>
+                <p>in Switch Statement only === means strick comparison works</p>
+                <p>
+                    <pre>
+                        basic structure
+
+                        switch(){
+
+                        }
+
+                        let input = 1;
+
+                        switch(input){
+                            case 1: // (input === 1)
+                                document.write("Continue...")
+                                break;
+                            case 'yes': (input === 'yes')
+                                document.write("Continue...")
+                                break;
+                            case 'y': (input === 'y')
+                                document.write("Continue...")
+                                break;
+                            case 0: (input === 0)
+                                document.write("End...")
+                                break;
+                            case 'n': (input === 'n')
+                                document.write("End...")
+                                break;
+                            case 'no': (input === 'no')
+                                document.write("End...")
+                                break;
+                            default :
+                                document.write("Wrong Input")                            
+                        }
+                        // Output continue...
+                    </pre>
+                </p>
+
+                <h3>Switch Statement with short form</h3>
+
+                <p>
+                    <pre>
+
+                        let input = 1;
+
+                        switch(input){
+                            case 1:
+                            case 'yes':
+                            case 'y':
+                                document.write("Continue...")
+                                break;
+                            case 0:
+                            case 'n':
+                            case 'no':
+                                document.write("End...")
+                                break;
+                            default :
+                                document.write("Wrong Input")                            
+                        }
+                        // Output continue...
+                    </pre>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let input = 'no';
+        switch(input){
+            case 1: // (input === 1)
+                document.write("Continue...")
+                break;
+            case 'yes': (input === 'yes')
+                document.write("Continue...")
+                break;
+            case 'y': (input === 'y')
+                document.write("Continue...")
+                break;
+            case 0: (input === 0)
+                document.write("End...")
+                break;
+            case 'n': (input === 'n')
+                document.write("End...")
+                break;
+            case 'no': (input === 'no')
+                document.write("End...")
+                break;
+            default :
+                document.write("Wrong Input")                            
+        }
+    </script>
+</body>
+</html>

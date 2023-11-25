@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <ul>
+                    <li><a href="./SwtichStatement.html">if else</a></li>
+                    <li><a href="./SwtichStatement.html">SwtichStatement</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2>lets learn loops</h2>
+                <h4>Single condition</h4>
+                <p>
+                    <pre>
+                        let age = 18;
+                        if(age>=18){
+                            document.write("You can vote!")
+                        }else{
+                            document.write("You can not Vote!")
+                        }
+
+                        // Output  document.write("You can vote!")
+
+                        let age = 15;
+
+                        // Output  document.write("You can not vote!")
+
+                        {} is called block
+           
+
+                    </pre>
+                </p>
+                <h4>Multiple condition</h4>
+                <p>
+                    <pre>
+                        let age = 18;
+                        let hasVoterCard = 'No';
+
+                        if(age>=18 && hasVoterCard == 'yes'){
+                            document.write("You can vote!")
+                        }else{
+                            document.write("You can not Vote!")
+                        }
+
+                        // Output  document.write("You can not vote!")
+
+                        else if
+
+                        let age = 18;
+                        let hasVoterCard = 'No';
+
+                        if(age>=18 && hasVoterCard == 'yes'){
+                            document.write("You can vote!")
+                        }else if(age>=18 && hasVoterCard != 'yes'){
+                            document.write("Get Your voter Id card")
+                        }else{
+                            document.write("You can not Vote!")
+                        }
+
+                        // Output  document.write("You can not vote!")
+       
+                    </pre>
+                </p>
+                <h4>Nested if else condition</h4>
+                <p>
+                    <pre>
+                        let age = 18;
+                        let hasVoterCard = "no";
+
+                        if(age>=18){
+                            if(hasVoterCard == 'yes'){
+                                document.write("you can vote")
+                            }else{
+                                document.write("get you voter id card")
+                            }
+                        }else{
+                            document.write("you can not vote!")
+                        }
+
+                        // Output document.write("Get Your voter Id card")
+                    </pre>
+                </p>
+                <h3>Ternery operator</h3>
+                <p>
+                    <pre>
+                        let isLoggedin = 1;
+                        let option = isLoggedin == 1 ? "Log Out" : " Log in";
+                        //            condition          true         False
+                        document.write(option)
+                    </pre>
+                </p>
+
+                <p> 
+                    <pre>
+                        // if input = 1, 'y', 'yes' Output = continue... 
+                        // if input = 0, 'n', 'no' Output = End...
+                    </pre>
+                </p>
+                <h3>With if else</h3>
+                <p>=== will help to compare string or number</p>
+                <p>
+                    <pre>
+                    // if input = 1, 'y', 'yes' Output = continue...
+                    // if input = 0, 'n', 'no' Output = End...
+
+                    let input = 1;
+                    
+                    if(input === 1){
+                        document.write("Continue...")
+                    }else if(input === 'y'){
+                        document.write("Continue...")
+                    }else if(input === 'yes'){
+                        document.write("continue...")
+                    }else if(input === 0){
+                        document.write("End...")
+                    }else if(input === 'n'){
+                        document.write("End...")
+                    }else{
+                        document.write("Wrong Output...")
+                    }
+                    // Output continue...
+                    </pre>
+                </p>
+
+                <h3>Short if else</h3>
+              
+                <p>
+                    <pre>
+                  
+                    let input = 1;
+                    
+                    if(input === 1 || input === 'y' || input === 'yes' ){
+                        document.write("Continue...")
+                    }else if(input === 0 || input === 'n' || input === 'no'){
+                        document.write("End...")
+                    }else{
+                        document.write("Wrong Output...")
+                    }
+                    // Output continue...
+                    </pre>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let isLoggedin = 0;
+        let option = isLoggedin == 1 ? "Log Out" : " Log in";
+        document.write(option)
+
+    </script>
+</body>
+</html>
