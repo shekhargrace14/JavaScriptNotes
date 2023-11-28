@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="row">
+                <h2>While, Do While, For</h2>
+                <h3>While</h3>
+                <p>
+                    <pre>
+                        imagin if we want to write "console.log("Hello World!")" for 10 times. Now we can do it by repeating the code again and again. 
+                        
+                        But with the help of "while loop" we can print it as many times without repeating the code.
+
+                        let counter = 1;
+
+                        while(counter <= 10){
+                            console.log("Hello World!")
+                            // counter = counter +1; // = counter ++
+                            
+                        }
+
+                        with - 
+
+                        let counter = 10;
+
+                        while(counter >= 1){    
+                            console.log("Hello World!")
+                            // counter = counter - 1; // = counter --
+                   
+                        }
+
+                    </pre>
+                </p>
+                <h3>Find the sum of all Even Numbers between 1 - 100</h3>
+                <p>
+                    <pre>
+                        let counter = 1;
+                        let sum = 0; 
+                        while(counter <= 100){
+                            if(counter % 2 == 0){
+                                sum = sum + counter;
+                            }
+                            counter++;
+                        }
+                        document.write(sum)
+                        console.log(sum)
+                    </pre>
+                </p>
+                <h3>Do While</h3>
+                <p>do while will run at least once Even if statement is false at first place. </p>
+                <p>
+                    <pre>
+                        let counter = 1;
+                        
+                        do{
+                            console.log("Hello World!")
+                            counter++;
+                        }while(counter <= 10);
+
+                    </pre>
+                </p>
+
+                <h3>for loop</h3>
+                <p></p>
+                <p>
+                    <pre>
+                        for(let counter = 1; counter <= 10 ;  counter++ ){
+                            document.write("Hello")
+                        }
+                    </pre>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+
+for(let counter = 1; counter <= 10 ;  counter++ ){
+                            document.write("Hello" + "<br>")
+                        }
+
+    </script>
+    
+</body>
+</html>
