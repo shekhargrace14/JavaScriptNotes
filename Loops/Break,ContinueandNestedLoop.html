@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="row">
+                <P>{} CODE written in curly brakets is called block. Continue and break both are related to the block </P>
+                <h2><br></h2>
+                <p>
+                    <pre>
+                        for (let counter = 1; counter<=10; counter++){
+                            document.write(counter)
+                            document.write('</br>')
+                        }
+                        // output
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                    </pre>
+                </p>
+
+                <h3>break</h3>
+                <p>Break will break the loop at the give condition.  </p>
+                <p>
+                    <pre>
+                        for (let counter = 1; counter<=10; counter++){
+                            if( conter == 5){
+                                break
+                            }
+                            document.write(counter)
+                            document.write('</br>')
+                        }
+                        output
+                        1
+                        2
+                        3
+                        4
+
+                    </pre>
+                </p>
+
+                <h3>Continue</h3>
+                <p>Continue will break the loop at satisfied condition and the continue further.  </p>
+                <p>
+                    <pre>
+                        for (let counter = 1; counter<=10; counter++){
+                            if( counter == 5){
+                                continue
+                            }
+                            document.write(counter)
+                            document.write('</br>')
+                        }
+                        output
+                        1
+                        2
+                        3
+                        4
+                        6
+                        7
+                        8
+                        9
+                        10
+
+                    </pre>
+                </p>
+                <h3>Nested Loop</h3>
+                <p>Loop in Loop  </p>
+                <p>
+                    <pre>
+                        for (let counter = 1; counter<=10; counter++){
+                            document.write(counter)
+                            document.write('</br>')
+                            for( counter2 =1; counter2 <= 2; counter2++){
+                                document.write("hello")
+                                document.write('</br>')
+                            }
+                        }
+                        output
+                        1
+                        hello
+                        hello
+                        2
+                        hello
+                        hello
+                        3
+                        hello
+                        hello
+                        4
+                        hello
+                        hello
+                        6
+                        hello
+                        hello
+                        7
+                        hello
+                        hello
+                        8
+                        hello
+                        hello
+                        9
+                        hello
+                        hello
+                        10
+                        hello
+                        hello
+                        
+
+                    </pre>
+                <h3>Nested Loop with break</h3>
+                <p>Loop in Loop  </p>
+                <p>
+                    <pre>
+                        for (let counter = 1; counter<=10; counter++){
+                            if(counter ==3){
+                                    break;
+                                }
+                            document.write(counter)
+                            document.write('</br>')
+                            for( counter2 =1; counter2 <= 2; counter2++){
+
+                                document.write("hello")
+                                document.write('</br>')
+                            }
+                        }
+                        output
+                        1
+                        hello
+                        hello
+                        2
+                        hello
+                        hello
+
+                    </pre>
+                </p>
+                <h3>Outer label</h3>
+                <p>We can name a loop with Outer  </p>
+                <p>
+                    <pre>
+                        for (let counter = 1; counter<=10; counter++){
+                            if(counter ==3){
+                                    break;
+                                }
+                            document.write(counter)
+                            document.write('</br>')
+                            for( counter2 =1; counter2 <= 2; counter2++){
+
+                                document.write("hello")
+                                document.write('</br>')
+                            }
+                        }
+                        output
+                        1
+                        hello
+                        hello
+                        2
+                        hello
+                        hello
+
+                    </pre>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+                        for (let counter = 1; counter<=10; counter++){
+                            if(counter ==3){
+                                    break;
+                                }
+                            document.write(counter)
+                            document.write('</br>')
+                            for( counter2 =1; counter2 <= 2; counter2++){
+
+                                document.write("hello")
+                                document.write('</br>')
+                            }
+                        }
+    </script>
+</body>
+</html>
