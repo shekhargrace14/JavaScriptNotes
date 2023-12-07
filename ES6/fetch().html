@@ -77,21 +77,25 @@
         })
         .catch((error)=>document.write("error in fetching data"));
 
-    <pre>
-        
-    </pre>
-    <script>
+    <h2>How to Insert, Update, Delete with fetch()</h2>
+    <p>
+        <pre>
 
-            // fetch('https://jsonplaceholder.typicode.com/users')
-            // .then(response=> response.json())
-            // .then(data=>{
-            //     console.log(data)
-            //     for(var x in data){
-            //         var a = `${data[x].name} - ${data[x].email} - ${data[x].address.city} <br>`
-            //         document.write(a)
-            //     }
-            // })
-            // .catch((error)=>document.write("error in fetching data"));
+        </pre>
+    </p>
+    <script>
+        fetch('https://api.musicapi.com/api/:userUUID/playlists/:playlistId')
+        .then(response=> response.json())
+        .then(data=>{
+            console.log(data)
+            for(var x in data){
+                var a = `${data[x].name} - ${data[x].email} - ${data[x].address.city} <br>`
+                document.write(a)
+            }
+        })
+        .catch((error)=>document.write("error in fetching data"));
+
+
 
     </script>
 </body>
