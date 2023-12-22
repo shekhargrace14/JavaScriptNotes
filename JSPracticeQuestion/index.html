@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice Questions</title>
+</head>
+<body>
+    <h2>JavaScript Practice Questions</h2>
+    <ol>
+        <li>Program to Check Whether a Number is Even or Odd.
+            <pre>
+                <input type="text" id="text">
+                <input type="submit" id="submit">
+                <p>Your Number is : <span id="result"></span> </p>
+                <!-- <p id="result">Your Number is : </p> -->
+
+
+            </pre>
+        </li>
+
+        
+    </ol>
+    <script>
+        let inputValue = document.getElementById("text");
+        let btn = document.getElementById("submit")  
+        let result = document.getElementById("result") 
+
+        btn.addEventListener("click", function(){
+            value = inputValue.value
+            // console.log(value);
+            
+            if (value%2 === 0 ){
+                // result.innerHTML = value
+
+                result.innerHTML = `${value}, "is even number"`;
+
+                console.log( value, "is even number")
+
+
+            }else if (value === string){
+                result.innerHTML = `${value}, "is not a number. Please Enter a Number."`;
+
+            }
+            else{
+                result.innerHTML = `${value}, "is odd number"`;
+
+                console.log( value, "is odd number ")
+
+            }
+
+        })
+    </script>
+</body>
+</html>
