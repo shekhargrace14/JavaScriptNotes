@@ -15,41 +15,60 @@
                 <p>Your Number is : <span id="result"></span> </p>
                 <!-- <p id="result">Your Number is : </p> -->
 
+                <!-- <script> -->
+                    let inputValue = document.getElementById("text");
+                    let btn = document.getElementById("submit")  
+                    let result = document.getElementById("result") 
+            
+                    btn.addEventListener("click", function(){
+                        value = inputValue.value
+                        // console.log(value);
+                        
+                        if (value%2 === 0 ){
+                            // result.innerHTML = value
+            
+                            result.innerHTML = `${value}, "is even number"`;
+            
+                            console.log( value, "is even number")
+            
+                            
+            
+            
+                        }
+                        // else if (value === string){
+                        //     result.innerHTML = `${value}, "is not a number. Please Enter a Number."`;
+            
+                        // }
+                        else{
+                            result.innerHTML = `${value}, "is odd number"`;
+            
+                            console.log( value, "is odd number ")
+            
+                        }
+            
+                        inputValue.innerHTML = "000";
+            
+                    })
+                <!-- </script> -->
 
             </pre>
+        </li>
+        <li>
+            <p>swap - using two varibale and third varbale</p>
+            
+
         </li>
 
         
     </ol>
     <script>
-        let inputValue = document.getElementById("text");
-        let btn = document.getElementById("submit")  
-        let result = document.getElementById("result") 
+        let a = 4;
+        let b = 5;
+         
+        console.log(`Value of a is : `,a, `after swiping a : `  )
+        console.log(`Value of b is : `,b )
+        
 
-        btn.addEventListener("click", function(){
-            value = inputValue.value
-            // console.log(value);
-            
-            if (value%2 === 0 ){
-                // result.innerHTML = value
-
-                result.innerHTML = `${value}, "is even number"`;
-
-                console.log( value, "is even number")
-
-
-            }else if (value === string){
-                result.innerHTML = `${value}, "is not a number. Please Enter a Number."`;
-
-            }
-            else{
-                result.innerHTML = `${value}, "is odd number"`;
-
-                console.log( value, "is odd number ")
-
-            }
-
-        })
     </script>
 </body>
 </html>
