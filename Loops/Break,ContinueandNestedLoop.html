@@ -147,14 +147,14 @@
                 <p>We can name a loop with Outer  </p>
                 <p>
                     <pre>
-                        for (let counter = 1; counter<=10; counter++){
-                            if(counter ==3){
-                                    break;
-                                }
+                        outer: for (let counter = 1; counter<=10; counter++){
+
                             document.write(counter)
                             document.write('</br>')
                             for( counter2 =1; counter2 <= 2; counter2++){
-
+                                if(counter ==3){
+                                    break outer;
+                                }
                                 document.write("hello")
                                 document.write('</br>')
                             }
