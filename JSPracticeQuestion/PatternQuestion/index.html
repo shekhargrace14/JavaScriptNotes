@@ -9,37 +9,334 @@
     <div class="container">
         <div class="row">
             <div class="column">
-                <ul>
-                    <li>
-                        <a href="../index.html">Back</a>
-                    </li>
-                    <li><a href="https://contactmentor.com/js-loop-exercises-solutions/" target="_blank">https://contactmentor.com/js-loop-exercises-solutions/ </a></li>
-                </ul>
+                <a href="../index.html">Back</a>
+                <a href="https://contactmentor.com/js-loop-exercises-solutions/" target="_blank">https://contactmentor.com/js-loop-exercises-solutions/ </a>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <ul>
-                    <li> <p>Print the patter</p>
-                        <pre>
-                            ****
-                            ****
-                            ****
-                            ****
-                        </pre>
-                    </li>
-                </ul>
+                <p>1. Square Star Pattern Program</p>
+            </div>
+            <div class="column">
+                <pre>
+                    ****
+                    ****
+                    ****
+                    ****
+                </pre>          
+            </div>
+            <div class="column">
+                <pre>
+                    case 1
+
+                    let n = 4;
+                    let str = "";
+
+                    for( i=1; i<=n; i++){
+                        for(j=0; j<=n; j++){
+                            str += "*";
+                        }
+                        str += "\n";
+
+                    }
+                    console.log(str)
+                </pre>
+
+                <pre>
+                    case 2
+
+                    let n = 5;
+                    let m = 5;
+
+                    for( i=1; i<=n; i++ ){
+                        for(j=1; j<=m; j++){
+                            console.log("*");
+                            document.write("*")
+                        }
+                        console.log("\n")
+                        document.write("<br/>")
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>2. Hollow Square Star Pattern Program</p>
+            </div>
+            <div class="column">
+                <pre>
+                    *****
+                    *   *
+                    *   *
+                    *   *
+                    *****
+                </pre>  
+            </div>
+            <div class="column">
+                <pre>
+                    let n = 4;
+                    let str = "";
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=n ; j++){
+                            if(i===1 || i===n || j===1 || j===n){
+                                str += "*";
+                            }else{
+                                str += ' ';
+                            }
+                        }
+                        str += "\n"
+                    }
+                    console.log(str);
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>3. Right Triangle Pattern in Javascript</p>
+            </div>
+            <div class="column">
+            </div>
+            <div class="column">
+                <pre>
+                        *
+                       **
+                      ***
+                     ****
+                    *****
+                </pre>  
+                <pre>
+                    let n = 5;
+                    let str = "";
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=n-i; j++){
+                                str += " ";
+                        }
+                        for(j=1; j<=i; j++){
+                            str += "*";
+                            }
+                        str += "\n"
+                    }
+                    console.log(str)
+                    
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p> 4. Left Triangle Pattern in Javascript</p>
+            </div>
+            <div class="column">
+                <pre>
+                    *
+                    **
+                    ***
+                    ****
+                    *****
+                </pre>
+                <pre>
+                    let n = 5;
+                    let str = "";
+                    
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=i; j++){
+            
+                            str += "*"
+                        }
+                        str += '\n'
+                    }
+                    console.log(str);
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p> 5. Downward Right Triangle Pattern in Javascript</p>
+            </div>
+            <div class="column">
+                <pre>
+                    *****  
+                     ****
+                      ***
+                       **
+                        *
+                </pre>
+                <pre>
+                    let n = 5;
+                    let str = "";
+            
+                    for(i=0; i<=n; i++){
+                        for(j=0; j<=i; j++){
+            
+                            str += " "
+                        }
+                        for(j=0; j<=n-i; j++){
+            
+                            str += "*"
+                        }
+                        str += "\n"
+                    }
+                    console.log(str)
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p> 5. Downward Left Triangle Pattern in Javascript</p>
+            </div>
+            <div class="column">
+                <pre>
+                    *****  
+                    ****
+                    ***
+                    **
+                    *
+                </pre>
+                <pre>
+                    let n = 5;
+                    let str = "";
+                    
+                    for(i=0; i<=n; i++){
+                        for(j=0; j<=n-i; j++){
+            
+                            str += "*"
+                        }
+                        str += '\n'
+                    }
+                    console.log(str);
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p> 6. Hollow Right Triangle Star Pattern</p>
+            </div>
+            <div class="column">
+                <pre>
+                    *
+                    **
+                    * *
+                    *  *
+                    *****
+                </pre>
+                <pre>
+                    let n = 5;
+                    let str = "";
+                    
+                    for(i=0; i<=n; i++){
+                        for(j=0; j<=i; j++){
+                            if(i==0||i==n||j==0||j==i){
+                                str += "*"
+                            }else{
+                                str += " "
+                            }
+                        }
+                        str += '\n'
+                    }
+                    console.log(str);
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p> 7. Hollow Left Triangle Star Pattern</p>
+            </div>
+            <div class="column">
+                <pre>
+                    *
+                    **
+                    * *
+                    *  *
+                    *****
+                </pre>
+                <pre>
+                    let n = 5;
+                    let str = "";
+                    
+                    for(i=0; i<=n; i++){
+                        for(j=0; j<=i; j++){
+                            if(i==0||i==n||j==0||j==i){
+                                str += "*"
+                            }else{
+                                str += " "
+                            }
+                        }
+                        str += '\n'
+                    }
+                    console.log(str);
+                </pre>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+                <p> 7. Hollow Downward Left Triangle Pattern in Javascript</p>
+            </div>
+            <div class="column">
+                <pre>
+                    *****  
+                    *  *
+                    * *
+                    **
+                    *
+                </pre>
+                <pre>
+                    let n = 5;
+                    let str = "";
+                    
+                    for(i=0; i<=n; i++){
+                        for(j=0; j<=n-i; j++){
+                            if(i==0||i==n||j==0||j==n-i){
+                                str += "*";
+                            }else{
+                                str += " "
+                            }
+                        }
+                        str += '\n'
+                    }
+                    console.log(str);
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>3. Rhombus Star Pattern Program (skewed square)</p>
+                <pre>   
+                        *****
+                       *****
+                      *****
+                     *****
+                    *****
+                </pre>
+            </div>
+            <div class="column">
+                <pre>
+                    let n = 5;
+                    let str = "";
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=n-i; j++){
+                                str += " ";
+                        }
+                        for(j=1; j<=n; j++){
+                            str += "*";
+                            }
+                        str += "\n"
+                    }
+                    console.log(str)
+                </pre>
+
             </div>
         </div>
     </div>
-    <script>
-        for(let i=1; i<=4; i++){
-            // for(j=0; j<=4; i++){
-            //     document.write("*")
-            // }
-            document.write("*")
-            console.log("*")
-        }
+    <script>        
+
     </script>
 </body>
 </html>
