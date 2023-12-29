@@ -11,6 +11,7 @@
             <div class="column">
                 <a href="../index.html">Back</a>
                 <a href="https://contactmentor.com/js-loop-exercises-solutions/" target="_blank">https://contactmentor.com/js-loop-exercises-solutions/ </a>
+                <a href="https://programmersportal.com/top-25-star-pattern-programs-in-javascript-with-examples/">https://programmersportal.com/top-25-star-pattern-programs-in-javascript-with-examples/</a>
             </div>
         </div>
         <div class="row">
@@ -276,7 +277,7 @@
         
         <div class="row">
             <div class="column">
-                <p> 7. Hollow Downward Left Triangle Pattern in Javascript</p>
+                <p> 8. Hollow Downward Left Triangle Pattern in Javascript</p>
             </div>
             <div class="column">
                 <pre>
@@ -307,7 +308,10 @@
 
         <div class="row">
             <div class="column">
-                <p>3. Rhombus Star Pattern Program (skewed square)</p>
+                <p>9. Rhombus Star Pattern Program (skewed square)</p>
+            </div>
+            <div class="column">
+               
                 <pre>   
                         *****
                        *****
@@ -326,7 +330,7 @@
                         }
                         for(j=1; j<=n; j++){
                             str += "*";
-                            }
+                        }
                         str += "\n"
                     }
                     console.log(str)
@@ -334,8 +338,202 @@
 
             </div>
         </div>
+
+        <div class="row">
+            <div class="column">
+                <p>9. Hollow Rhombus Star Pattern Program (skewed square)</p>
+            </div>
+            <div class="column">
+                <pre>   
+                    *****
+                   *   *
+                  *   *
+                 *   *
+                *****
+                </pre>
+                <pre>
+                    let n = 4;
+                    let str = "";
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=n-i; j++){
+                            str += " ";
+                        }
+                        for(j=1; j<=n; j++){
+                            if(j===1 || i===1||j===n||i===n){
+
+                                str += "*";
+                                
+                            }else{
+                                str += " ";
+
+                            }
+                        }
+                        str += "\n"
+                    }
+                    console.log(str);
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>10. Mirrored Rhombus Pattern Program</p>
+            </div>
+            <div class="column">
+                <pre>
+                *****
+                 *****
+                  *****
+                   *****
+                    *****
+                </pre>
+            </div>
+            <div class="column">
+                <pre>
+                    let n = 4;
+                    let str = "";
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=i; j++){
+                            str += " ";
+                        }
+                        for(j=1; j<=n; j++){
+                            str += "*";
+                        }
+                        str += "\n"
+                    }
+                    console.log(str)
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>11. Hollow Mirrored Rhombus Pattern Program</p>
+
+            </div>
+            <div class="column">
+                <pre>
+                    *****
+                     *   *
+                      *   *
+                       *   *
+                        *****
+                </pre>
+
+                <pre>
+                    let n = 4;
+                    let str = "";
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=i; j++){
+                            str += " ";
+                        }
+                        for(j=1; j<=n; j++){
+                            if(j===1|| j===n|| i===1 || i===n   ){
+            
+                                str += "*";
+                            }else{
+                                str += " ";
+            
+                            }
+                        }
+                        str += "\n"
+                    }
+                    console.log(str)
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>12. Pyramid Pattern Program</p>
+            </div>
+            <div class="column">
+                <pre>
+                        *
+                       ***
+                      *****
+                     *******
+                    *********
+                </pre>
+                <pre>
+                    let n = 4;
+                    let str = "";
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=n-i; j++){
+                            str += " ";
+                        }
+                        for(j=1; j<=2*i-1; j++){
+                            
+            
+                            str += "*";
+            
+                        }
+                        str += "\n"
+                    }
+                    console.log(str)
+            
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>12. Pyramid Pattern Program</p>
+            </div>
+            <div class="column">
+                <pre>
+                    *********
+                     *******
+                      *****
+                       ***
+                        *
+                </pre>  
+                <pre>
+                    let n = 5;
+                    let str = "";
+                    for(i=1; i<=n; i++){
+                        for(j=1; j<=i; j++){
+                            str += " ";
+                        }
+                        for(j=1; j<=2*(n-i)-1; j++){
+            
+                            str += "*";
+            
+                        }
+                        str += "\n"
+                    }
+                    console.log(str)
+                </pre>      
+            </div>
+        </div>
+        
+
     </div>
-    <script>        
+    <script>   
+        let n = 5;
+        let str = "";
+        for(i=1; i<=n; i++){
+            for(j=1; j<=i; j++){
+                str += " ";
+            }
+            for(j=1; j<=2*(n-i)-1; j++){
+                if(
+                     j===1
+                    ||j===n
+                    ||i===1
+                    ||i===n
+                ){
+                    str += "*";
+                }else{
+                    str += " ";
+
+                }
+
+
+            }
+            str += "\n"
+        }
+        console.log(str)
 
     </script>
 </body>
