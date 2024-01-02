@@ -9,9 +9,10 @@
     <div class="container">
         <div class="row">
             <div class="column">
-                <a href="../index.html">Back</a>
-                <a href="https://contactmentor.com/js-loop-exercises-solutions/" target="_blank">https://contactmentor.com/js-loop-exercises-solutions/ </a>
-                <a href="https://programmersportal.com/top-25-star-pattern-programs-in-javascript-with-examples/">https://programmersportal.com/top-25-star-pattern-programs-in-javascript-with-examples/</a>
+                <a href="../index.html">Back</a>  <br> <br>
+                <a href="https://contactmentor.com/js-loop-exercises-solutions/" target="_blank">https://contactmentor.com/js-loop-exercises-solutions/ </a> <br> <br>
+                <a href="https://programmersportal.com/top-25-star-pattern-programs-in-javascript-with-examples/" target="_blank">https://programmersportal.com/top-25-star-pattern-programs-in-javascript-with-examples/</a> <br> <br>
+              
             </div>
         </div>
         <div class="row">
@@ -510,30 +511,16 @@
 
     </div>
     <script>   
-        let n = 5;
-        let str = "";
-        for(i=1; i<=n; i++){
-            for(j=1; j<=i; j++){
-                str += " ";
-            }
-            for(j=1; j<=2*(n-i)-1; j++){
-                if(
-                     j===1
-                    ||j===n
-                    ||i===1
-                    ||i===n
-                ){
-                    str += "*";
-                }else{
-                    str += " ";
 
-                }
+        // table of 2.
+        let n = 6;
 
 
-            }
-            str += "\n"
-        }
-        console.log(str)
+        for(i=1; i<=10; i++){
+            console.log(`${n} X ${i} = ${n*i}`)
+        }    
+            
+
 
     </script>
 </body>
